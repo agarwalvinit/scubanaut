@@ -1,6 +1,6 @@
 ##Webpack Handlebars Starter Project
 
-A simple starter project built on webpack, handlebars, sass and babel.
+A simple starter project built on webpack, handlebars, sass and babel. Useful for creating and working with reusable, modular components.
 
 ###Installation
 

@@ -25,6 +25,8 @@ The generated `dist` folder is created with the following structure:
         bundle.js
       index.html
 
+The generated `html` files will have links to both `site.css` and `bundle.js`.
+
 Any additional build files/folders can be added to the `src` directory (js, etc.). Any additional public files can be added to the `dist` directory (images, etc.).
 
 To add a new page to the site, simply create the view (see `index.handlebars`, `about.handlebars`, etc.) and add an additional `HtmlWebpackPlugin` instance to the `webpack.config.js`.

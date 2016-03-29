@@ -8,7 +8,7 @@ A simple starter project built on webpack, handlebars, sass and babel.
     
 ###Usage
 
-Run the following to start up the development server and watch for changes.
+Run the following to start up the development server and watch for changes. Additional `dist` files (bundle.js, site.css) will be generated upon build.
 
     webpack --color --watch & webpack-dev-server --inline --content-base ./dist
     

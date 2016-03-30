@@ -46,7 +46,7 @@ module.exports = {
 	plugins: [
 		new ExtractTextPlugin('css/site.css'),
 		new HtmlWebpackPlugin({
-			title: 'Welcome',
+			title: 'Home',
 			filename: 'index.html',
 			template: './src/views/index.handlebars'
 		}),

@@ -1,6 +1,6 @@
 ##Webpack Handlebars Starter Project
 
-A simple starter project built on webpack, handlebars, sass and babel.
+A simple starter project built on webpack, handlebars, sass and babel. Useful for creating and working with reusable, modular components.
 
 ###Installation
 
@@ -8,11 +8,24 @@ A simple starter project built on webpack, handlebars, sass and babel.
     
 ###Usage
 
-Run the following to start up the development server and watch for changes. The `dist` directory will be created with generated files (bundle.js, site.css) on build.
+Run the following to start up the development server and watch for changes.
 
     webpack --color --watch & webpack-dev-server --inline --content-base ./dist
     
 Browse to `http://localhost:8080/`
+
+The generated `dist` folder is created with the following structure:
+
+    dist
+      about
+        index.html
+      css
+        site.css
+      js
+        bundle.js
+      index.html
+
+The generated `html` files will have links to both `site.css` and `bundle.js`.
 
 Any additional build files/folders can be added to the `src` directory (js, etc.). Any additional public files can be added to the `dist` directory (images, etc.).
 

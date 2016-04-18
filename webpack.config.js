@@ -8,10 +8,13 @@ var webpack = require('webpack'),
 
 module.exports = {
 	context: path.resolve(__dirname),
-	entry: ['./src/index.js'],
+	entry: {
+		index: './src/index.js',
+		about: './src/about.js'
+	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: 'js/bundle.js'
+		filename: 'js/[name].js'
 	},
 	module: {
 		loaders: [
@@ -44,16 +47,18 @@ module.exports = {
 		includePaths: ['./src/scss']
 	},
 	plugins: [
-		new ExtractTextPlugin('css/site.css'),
+		new ExtractTextPlugin('css/[name].css'),
 		new HtmlWebpackPlugin({
 			title: 'Home',
 			filename: 'index.html',
-			template: './src/views/index.handlebars'
+			template: './src/views/index.handlebars',
+			chunks: ['index']
 		}),
 		new HtmlWebpackPlugin({
 			title: 'About',
 			filename: 'about/index.html',
-			template: './src/views/about.handlebars'
+			template: './src/views/about.handlebars',
+			chunks: ['about']
 		})
 	],
 	resolve: {

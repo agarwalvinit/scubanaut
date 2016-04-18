@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box; }
+
+.nav ul {
+  list-style: none;
+  padding: 0; }
+  .nav ul li {
+    display: inline-block;
+    margin-right: 8px; }
+    .nav ul li a {
+      text-decoration: none; }
+
+.header {
+  color: #000; }
+
+.header {
+  color: #FA987D; }

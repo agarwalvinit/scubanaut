@@ -33,7 +33,7 @@ Any additional build files/folders can be added to the `src` directory (js, etc.
 
 To add a new page to the site, simply create the view (see `index.handlebars`, `about.handlebars`, etc.), create a javascript file (see `index.js`, `about.js`, etc.), create a sass file (see `index.scss`, `about.scss`, etc.) and update the `webpack.config.js` as follows:
 
-####Entry
+#####Entry
 
 ```javascript
 entry: {
@@ -43,7 +43,7 @@ entry: {
 },
 ```
 
-####HtmlWebpackPlugin
+#####HtmlWebpackPlugin
 
 ```javascript
 new HtmlWebpackPlugin({

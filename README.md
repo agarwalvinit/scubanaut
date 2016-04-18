@@ -20,21 +20,33 @@ The generated `dist` folder is created with the following structure:
       about
         index.html
       css
-        site.css
+        about.css
+        index.css
       js
-        bundle.js
+        about.js
+        index.js
       index.html
 
-The generated `html` files will have links to both `site.css` and `bundle.js`.
+The generated `html` files will have links to their respective `[name].css` and `[name].js` files.
 
 Any additional build files/folders can be added to the `src` directory (js, etc.). Any additional public files can be added to the `dist` directory (images, etc.).
 
-To add a new page to the site, simply create the view (see `index.handlebars`, `about.handlebars`, etc.) and add an additional `HtmlWebpackPlugin` instance to the `webpack.config.js`.
+To add a new page to the site, simply create the view (see `index.handlebars`, `about.handlebars`, etc.), create a javascript file (see `index.js`, `about.js`, etc.), create a sass file (see `index.scss`, `about.scss`, etc.) and update the `webpack.config.js` as follows:
+
+#####Entry
+
+```javascript
+entry: {
+	index: './src/index.js',
+	about: './src/about.js',
+	//new entry goes here
+},
+```
+
+#####HtmlWebpackPlugin
 
 ```javascript
 new HtmlWebpackPlugin({
-	title: 'About',
-	filename: 'about/index.html',
-	template: './src/views/about.handlebars'
+	//new instance goes here, chunks value should match key from entry above
 })
 ```

@@ -1,4 +1,2 @@
 node_modules
-dist/css/site.css
-dist/js/bundle.js
-dist/**/*.html
+dist/*

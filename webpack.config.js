@@ -3,9 +3,6 @@ var webpack = require('webpack'),
 	ExtractTextPlugin = require('extract-text-webpack-plugin'),
 	HtmlWebpackPlugin = require('html-webpack-plugin');
 
-// run with the following to allow webpack-dev-server and htmlwebpackplugin to work together
-// webpack --color --watch & webpack-dev-server --inline --content-base ./dist
-
 module.exports = {
 	context: path.resolve(__dirname),
 	entry: {

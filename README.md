@@ -10,9 +10,13 @@ A simple starter project built on webpack, handlebars, sass and babel. Useful fo
 
 Run the following to start up the development server and watch for changes.
 
-    webpack --color --watch & webpack-dev-server --inline --content-base ./dist
+    npm start
     
 Browse to `http://localhost:8080/`
+
+Run the following for a production build (minification, etc.).
+
+    npm run build
 
 The generated `dist` folder is created with the following structure:
 

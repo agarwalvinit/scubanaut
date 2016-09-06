@@ -6,8 +6,10 @@
   "author": "Adam Whitehouse",
   "license": "MIT",
   "scripts": {
-    "start": "server.sh",
-    "build": "build.sh"
+    "start": "npm-run-all --parallel dev-build dev-server",
+    "build": "webpack --color -p",
+    "dev-build": "webpack --color --watch",
+    "dev-server": "webpack-dev-server --inline --content-base ./dist"
   },
   "dependencies": {
     "babel-core": "^6.7.2",
@@ -24,6 +26,7 @@
     "handlebars-loader": "^1.4.0",
     "html-webpack-plugin": "^2.10.0",
     "node-sass": "^3.4.2",
+    "npm-run-all": "^3.1.0",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.14",

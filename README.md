@@ -38,7 +38,7 @@ The generated `html` files will have links to their respective `[name].css` and 
 
 Contents of the `static` directory are simply copied to `dist`.
 
-To add a new page to the site, simply create a view folder with content similar to `home` and `about` and update the `webpack.config.js` as follows:
+To add a new page to the site, create a view folder with content similar to `home` and `about` and update the `webpack.config.js` as follows:
 
 #####Entry
 

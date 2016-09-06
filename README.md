@@ -1,6 +1,6 @@
 ##Webpack Handlebars Starter Project
 
-A simple starter project built on webpack, handlebars, sass and babel. Useful for creating and working with reusable, modular components.
+A simple starter project built on webpack, handlebars, sass and babel. Useful for creating static sites with reusable, modular components.
 
 ###Installation
 
@@ -26,23 +26,26 @@ The generated `dist` folder is created with the following structure:
       css
         about.css
         index.css
+      img
+      	logo.png
       js
         about.js
         index.js
+      favicon.ico
       index.html
 
 The generated `html` files will have links to their respective `[name].css` and `[name].js` files.
 
-Any additional build files/folders can be added to the `src` directory (js, etc.). Any additional public files can be added to the `dist` directory (images, etc.).
+Contents of the `static` directory are simply copied to `dist`.
 
-To add a new page to the site, simply create the view (see `index.handlebars`, `about.handlebars`, etc.), create a javascript file (see `index.js`, `about.js`, etc.), create a sass file (see `index.scss`, `about.scss`, etc.) and update the `webpack.config.js` as follows:
+To add a new page to the site, simply create a view folder with content similar to `home` and `about` and update the `webpack.config.js` as follows:
 
 #####Entry
 
 ```javascript
 entry: {
-	index: './src/index.js',
-	about: './src/about.js',
+	index: './src/views/home/home.js',
+	about: './src/views/about/about.js',
 	//new entry goes here
 },
 ```

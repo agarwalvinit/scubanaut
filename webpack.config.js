@@ -48,7 +48,7 @@ module.exports = {
 	},
 	sassLoader: {
 		includePaths: [
-			'./src/scss',
+			'./src/styles',
 			'./src/views/**/*.scss',
 			'./src/components/**/*.scss'
 		]

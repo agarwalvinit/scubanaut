@@ -1,0 +1,14 @@
+.sale-container {
+    height: 70px;
+    color: $blue-1;
+    background-color: rgba($black, 0.68);
+}
+
+.social-media__box {
+    height: 30px;
+    width: 30px;
+    > img {
+        height: 100%;
+        width: 100%;
+    }
+}

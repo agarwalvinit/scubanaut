@@ -1,3 +1,20 @@
 .header {
-	color: $black;
+  background-color: rgba(1, 32, 52, 0.85);
+  h1 {
+    color: $primary;
+  }
+  p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .para__section {
+    width: 65%;
+  }
+  @media (max-width: 950px) {
+    .para__section {
+      width: 90%;
+    }
+  }
 }

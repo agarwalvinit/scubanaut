@@ -1,0 +1,30 @@
+@import "../footer-strip/footer-strip";
+
+.address {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    background-size: 15px 20px;
+    background-color: $white;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 25px;
+    left: -25px;
+    bottom: 0;
+  }
+  &.address__line:before {
+    background-image: url(/img/location.png);
+  }
+  &.phone__line:before {
+    background-image: url(/img/whatsapp.png);
+    background-size: 15px 15px;
+    bottom: -7px;
+  }
+  &.mail__line:before {
+    background-image: url(/img/mail.png);
+    background-size: 15px;
+    bottom: -10px;
+  }
+}

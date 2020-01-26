@@ -1,0 +1,14 @@
+.footer-strip__container {
+    height: 50px;
+    color: $white;
+    background-color: rgba($black, 0.68);
+}
+
+.social-media__box {
+    height: 30px;
+    width: 30px;
+    > img {
+        height: 100%;
+        width: 100%;
+    }
+}

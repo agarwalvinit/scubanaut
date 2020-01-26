@@ -1,7 +1,16 @@
 @import '../../styles/base';
+@import '../../components/sale/sale';
 @import '../../components/nav/nav';
 @import '../../components/header/header';
+@import '../../components/footer/footer';
 
 .header {
 	color: $primary;
+}
+.scuba__btn {
+	border: solid 1px $white;
+	outline: none;
+	background: transparent;
+	width: 160px;
+	margin-top: 30px;
 }

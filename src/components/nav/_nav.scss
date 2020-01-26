@@ -1,15 +1,24 @@
 .nav {
+	justify-content: space-between;
 	ul {
 		list-style: none;
 		padding: 0;
 
 		li {
 			display: inline-block;
-			margin-right: 8px;
+			margin-right: 20px;
 
 			a {
 				text-decoration: none;
+				color: $blue-1;
+				&:hover {
+					color: $primary;
+				}
 			}
+			
 		}
+	}
+	.pure-menu-horizontal {
+		width: auto;
 	}
 }

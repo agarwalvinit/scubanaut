@@ -45,11 +45,9 @@ body {
 }
 
 body {
-  background-image: url("/img/background.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: left top;
-	background-color: rgb(1, 19, 33)
+  max-width: 1200px;
+  background-color: rgb(1, 19, 33);
+  margin: auto;
 }
 
 .flex {

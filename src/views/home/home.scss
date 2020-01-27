@@ -1,16 +1,22 @@
-@import '../../styles/base';
-@import '../../components/sale/sale';
-@import '../../components/nav/nav';
-@import '../../components/header/header';
-@import '../../components/footer/footer';
+@import "../../styles/base";
+@import "../../components/sale/sale";
+@import "../../components/nav/nav";
+@import "../../components/header/header";
+@import "../../components/footer/footer";
 
+.homepage__container {
+  background-image: url("/img/background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
 .header {
-	color: $primary;
+  color: $primary;
 }
 .scuba__btn {
-	border: solid 1px $white;
-	outline: none;
-	background: transparent;
-	width: 160px;
-	margin-top: 30px;
+  border: solid 1px $white;
+  outline: none;
+  background: transparent;
+  width: 160px;
+  margin-top: 30px;
 }
